@@ -13,7 +13,7 @@ jobs:
             fail-fast: false
             matrix:
                 os: [ubuntu-latest]
-                php: ['7.4', '8.0', '8.1']
+                php: ['7.4', '8.0', '8.1', '8.2']
 
         steps:
             - name: Install sendmail
@@ -38,7 +38,7 @@ jobs:
               run: composer update $DEFAULT_COMPOSER_FLAGS
             - name: Install logging proxy
               if: ${{ matrix.php != '7.4' }}
-              run: composer require "yiisoft/yii2-psr-log-source"
+              run: composer require "ziphp/psr-log-source"
             - name: Run unit tests with coverage
               run: vendor/bin/phpunit --coverage-text
             - name: Static analysis (Psalm)

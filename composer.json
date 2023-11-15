@@ -1,5 +1,5 @@
 {
-    "name": "yiisoft/yii2-symfonymailer",
+    "name": "ziphp/symfonymailer",
     "description": "The SymfonyMailer integration for the Yii framework",
     "keywords": [
         "yii2",
@@ -12,11 +12,8 @@
     "type": "yii2-extension",
     "license": "BSD-3-Clause",
     "support": {
-        "issues": "https://github.com/yiisoft/yii2-symfonymailer/issues",
-        "forum": "http://www.yiiframework.com/forum/",
-        "wiki": "http://www.yiiframework.com/wiki/",
-        "irc": "irc://irc.freenode.net/yii",
-        "source": "https://github.com/yiisoft/yii2-symfonymailer"
+        "issues": "https://github.com/ziphp/symfonymailer/issues",
+        "source": "https://github.com/ziphp/symfonymailer"
     },
     "authors": [
         {
@@ -26,7 +23,7 @@
     ],
     "require": {
         "php": ">=7.4.0",
-        "yiisoft/yii2": ">=2.0.4",
+        "ziphp/ziphp": ">=5.0.0",
         "symfony/mailer": ">=5.4.0"
     },
     "require-dev": {
@@ -52,17 +49,17 @@
     },
     "autoload-dev": {
         "classmap": [
-            "vendor/yiisoft/yii2/Yii.php"
+            "vendor/ziphp/ziphp/framework/Yii.php"
         ]
     },
     "extra": {
         "branch-alias": {
-            "dev-master": "3.0.x-dev"
+            "dev-main": "6.0.x-dev"
         }
     },
     "config": {
         "allow-plugins": {
-            "yiisoft/yii2-composer": true,
+            "ziphp/zipper": true,
             "captainhook/plugin-composer": true
         }
     }
